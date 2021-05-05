@@ -95,7 +95,6 @@ const computerAnimationSequence = (playerChoice) => {
         finishGameFlow(playerChoice);
     }, interval += 1000);
     setTimeout(() => askUserToPlayAgain(), interval += 1000);
-
 }
 
 const computerChoiceAnimation = (elementId, number) => {

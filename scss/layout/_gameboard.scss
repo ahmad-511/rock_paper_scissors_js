@@ -14,19 +14,12 @@
 
         img {
             width: 100%;
-            cursor: pointer;
             transition: 500ms;
             outline: none;
         }
 
-        img:hover, 
-        img:focus {
-            width: 110%;
-            filter: brightness(120%);
-        }
-
         p {
-            font-size: 5rem;
+            font-size: 3.9rem;
             animation: fadeInFromNone 1s ease-in;
             @include mq(768px) {
                 font-size: 6rem;
@@ -48,5 +41,17 @@
         visibility: hidden;
         width: 0;
         transition: width 0.5s linear, visibility 0.5s linear;
+    }
+}
+
+.playerBoard .gameboard {
+    img {
+        cursor: pointer;
+    }
+    
+    img:hover, 
+    img:focus {
+        transform: scale(1.1);
+        filter: brightness(120%);
     }
 }
